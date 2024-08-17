@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Themed Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="shogiBoard"></div>
+    <div id="questionBox" class="hidden">
+        <p id="questionText">What is the correct particle to use in this sentence: 私は日本______勉強しています。</p>
+        <button onclick="answerQuestion('で')">で</button>
+        <button onclick="answerQuestion('に')">に</button>
+        <button onclick="answerQuestion('が')">が</button>
+        <button onclick="answerQuestion('を')">を</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#shogiBoard {
+    display: grid;
+    width: 450px;
+    height: 450px;
+    border: 10px solid #8b4513;
+    background-color: #f5deb3;
+}
+.board-square {
+    border: 1px solid #8b4513;
+    box-sizing: border-box;
+}
+
+
+
+#shogiBoard div {
+    border: 1px solid #8b4513; /* Grid lines resembling a shogi board */
+    background-color: #e6c288; /* Base wood color */
+}
+
+#shogiBoard div:nth-child(odd) {
+    background-color: #d9a866; /* Darker wood color for checkered effect */
+}
+
+.snake {
+    background-color: #008000 !important; /* Solid green color for the snake to stand out */
+    width: 100%;
+    height: 100%;
+}
+
+
+.onigiri {
+    background-color: #ff0000 !important; /* Bright red color for the standard onigiri */
+    width: 100%;
+    height: 100%;
+}
+
+.specialOnigiri {
+    background-color: #0000ff !important; /* Bright blue color for the special onigiri */
+    width: 100%;
+    height: 100%;
+}
+
+#questionBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+#questionBox button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#questionBox button:hover {
+    background-color: #45a049;
+}
